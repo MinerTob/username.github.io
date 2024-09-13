@@ -1,0 +1,26 @@
+.banner {
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+    height: 200px; /* 调整高度以缩小间距 */
+    color: black;
+    font-size: 36px;
+    margin-top: 20px; /* 设置与导航的间距 */
+}
+
+.image-container {
+    display: flex;
+    justify-content: center; /* 图片水平居中 */
+    margin: 10px 0; 
+}
+
+.image-container img {
+    max-width: 80%; /* 调整最大宽度 */
+    height: auto;
+    margin: 10px 0; /* 调整与文字间距 */
+}
+
+.intro {
+    text-align: center; /* 使文本居中 */
+    margin-top: 5px; /* 调整与图片的间距 */
+}

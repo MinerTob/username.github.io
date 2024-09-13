@@ -1,0 +1,143 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 20px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    width: 100%; /* 确保导航条占满整个宽度 */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex; 
+}
+
+nav li {
+    margin: 0 15px; 
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    display: block; /* 使链接填满父元素 */
+}
+
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.container {
+    max-width: 800px; /* 设置与index.html一致的宽度 */
+    margin: 20px auto; /* 居中并添加垂直间距 */
+    padding: 20px;
+    border: 1px solid black; /* 黑色边框 */
+    border-radius: 8px; /* 圆角效果 */
+}
+
+footer {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+}
+
+.form-section {
+    text-align: center;
+    font-size: larger;
+    margin: 20px 0;
+}
+
+.contact-box {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contact-item {
+    display: flex; /* 添加这一行 */
+    flex-direction: column; /* 修改为垂直方向 */
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    width: 180px;
+    text-align: center; /* 修改为 center */
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    background-color: #e0e0e0;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.contact-item:hover {
+    background-color: #d0d0d0;
+    transform: scale(1.03);
+}
+
+.email-link,
+.wechat-link,
+.twitter-link,
+.github-link {
+    text-decoration: underline;
+    cursor: pointer;
+    color: black;
+    transition: color 0.3s ease;
+}
+
+.email-link:hover,
+.wechat-link:hover,
+.twitter-link:hover,
+.github-link:hover {
+    color: blue;
+}
+
+.email {
+    display: block; /* 添加这一行 */
+    max-width: 120px; /* 可调整的最大宽度以控制换行 */
+    word-wrap: break-word;
+}
+
+.project-link {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: underline;
+    color: black;   /* 默认颜色为黑色 */
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.download-link {
+    color: blue; /* 默认文字颜色 */
+    text-decoration: none; /* 默认去掉下划线 */
+}
+
+.download-link:hover {
+    color: red; /* 鼠标悬停时的文字颜色 */
+}
+
+.project-link:hover {
+    color: blue;  /* 悬停时颜色变为蓝色 */
+}
+
+.project-link:active {
+    color: blue;  /* 点击时颜色保持为蓝色 */
+}
+
+/* 额外的样式可以添加在这里 */
