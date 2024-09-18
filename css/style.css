@@ -141,3 +141,14 @@ footer {
 }
 
 /* 额外的样式可以添加在这里 */
+.official-link {
+    color: blue; /* 默认文字颜色 */
+    text-decoration: none; /* 默认去掉下划线 */
+}
+
+.official-link:hover {
+    color: red; /* 鼠标悬停时的文字颜色 */
+}
+.download-link:active {
+    color: red; /* 鼠标点击时的文字颜色 */
+}
