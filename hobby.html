@@ -2,29 +2,13 @@
 <html lang="zh">
 <head>
     <meta charset="UTF-8">
-    <title>个人简历 - 关于我</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script>
-        function copyEmail() {
-            navigator.clipboard.writeText("yanfangwei467@gmail.com").then(() => {
-                alert("邮箱地址已复制到剪贴板！");
-            }).catch(err => {
-                console.error('复制失败:', err);
-            });
-        }
-
-        function copyWechat() {
-            navigator.clipboard.writeText("hbm090314").then(() => {
-                alert("微信号已复制到剪贴板！");
-            }).catch(err => {
-                console.error('复制失败:', err);
-            });
-        }
-    </script>
+    <title>个人简历 - 爱好</title>
+    <link rel="stylesheet" href="css/hobby.css">
+    <script src="js/script.js" defer></script> <!-- 引入 JavaScript -->
 </head>
 <body>
 <header>
-    <div class="title">矿工Tob的个人简历 - 关于我</div>
+    <div class="title">矿工Tob的个人简历 - 爱好</div>
     <nav>
         <ul>
             <li><a href="index.html">首页</a></li>
@@ -35,77 +19,40 @@
     </nav>
 </header>
 <main>
-    <div class="container">
-        <section class="personal-info">
-            <h1>个人信息</h1>
-            <p>网名：矿工Tob</p>
-            <p>性别：武装直升机</p>
-            <p>年龄：未知</p>
-            <p>邮箱：<span class="email-link" onclick="copyEmail()">yanfangwei467@gmail.com</span></p>
-            <p>电话：+86 13557110847</p>
-        </section>
-        <section class="education">
-            <h2>教育背景</h2>
-            <p>2022-2025 年就读于 南宁市第十四中学（琅东校区）</p>
-        </section>
-        <section class="skills">
-            <h2>技能</h2>
-            <ul>
-                <li>熟悉 HTML、CSS 和 JavaScript</li>
-                <li>熟悉 Python 和 C++ 和 JAVA 编程</li>
-                <li>熟悉 QT 和 OPENCV 数据库</li>
-                <li>会使用 webpack、npm、yarn、git 等工具进行项目管理</li>
-            </ul>
-        </section>
-        <section class="projects">
-            <h2>项目经验</h2>
-            <h3>项目一：父母性别查询器</h3>
-            <p>使用 pytkinter 库编写的父母性别查询器，可以查询父母的性别信息，并将结果显示在屏幕上。</p>
-            <a class="project-link" href="https://github.com/MinerTob/-Parents-Gender-Query-Software" target="_blank">了解详细…</a>
-            <a class="download-link" href="project/Parental_Gender_Finder_Installation_Package.exe" download>Download</a>
-            <a class="official-link" href="https://74cf.com:443" target="_blank">官方网站</a>
-            <h3>项目二：电脑音量调节器</h3>
-            <p>QT 编写的电脑音量调节器，可以调节音量大小，显示当前时间 UTC+8</p>
-            <a class="project-link" href="https://github.com/MinerTob/Computer-volume-adjuster" target="_blank">了解详细…</a>
-            <a class="download-link" href="project/Computer_volume_adjuster_installation_package.exe" download>Download</a>
-            <h3>项目三：自我介绍网站（个人简历）</h3>
-            <p>使用 HTML、CSS、JavaScript 编写的个人简历网站，展示了我的个人信息、个人爱好、技能、项目经验等</p>
-            <a class="project-link" href="https://github.com/MinerTob/username.github.io" target="_blank">了解详细…</a>
-            <h3>项目四：日期查询器</h3>
-            <p>使用 Vue.js 编写的日期查询器，可以查询当前日期和选择日期之间的天数、月数、年数等，还可以改变用户所在的时区。</p>
-            <a class="project-link" href="https://github.com/MinerTob/time" target="_blank">了解详细…</a>
-            <a class="official-link" href="https://time.74cf.com:8754" target="_blank">网站地址</a>
-            <h3>项目五：AI五子棋</h3>
-            <p>使用 JavaScript 编写的五子棋AI，使用蒙特卡洛树搜索算法进行AI的训练和决策。</p>
-            <a class="official-link" href="https://china.74cf.com:8968" target="_blank">此网站目前已关闭</a>
-            <h3>项目六：小猿口算-OCR</h3>
-            <p>使用 Python 编写的小猿口算-OCR，可以识别小猿口算中比大小的数字并进行计算，然后自动输出并填入结果，最后自动进入下一局</p>
-            <a class="project-link" href="https://github.com/MinerTob/Xiaoyuankousuan--ocr" target="_blank">了解详细…</a>
-        </section>
-    </div>
-</main>
-
-<section class="form-section">
-    <h2>联系我</h2>
-    <div class="contact-box">
-        <div class="contact-item">
-            <div>Email:</div>
-            <span class="email email-link" onclick="copyEmail()">yanfangwei467@gmail.com</span>
-        </div>
-        <div class="contact-item">
-            <div>WeChat:</div>
-            <span class="wechat-link" onclick="copyWechat()">hbm090314</span>
-        </div>
-        <div class="contact-item">
-            <div>Twitter:</div>
-            <a class="twitter-link" href="https://twitter.com/wei_yan95742">@MinerTob</a>
-        </div>
-        <div class="contact-item">
-            <div>GitHub:</div>
-            <a class="github-link" href="https://github.com/MinerTob">MinerTob</a>
-        </div>
-    </div>
+<div class="container">
+<section class="hobby">
+<h1>个人爱好</h1>
+<table>
+<tr>
+<th>爱好</th>
+<th>描述</th>
+</tr>
+<tr>
+<td>阅读</td>
+<td>喜欢读各种类型的书籍，包括小说、历史、科普等。</td>
+</tr>
+<tr>
+<td>旅行</td>
+<td>喜欢探索不同的地方，了解不同的文化和风土人情。</td>
+</tr>
+<tr>
+<td>摄影</td>
+<td>喜欢记录生活中的美好瞬间，用镜头记录自己的成长和感悟。</td>
+</tr>
+<tr>
+<td>电影</td>
+<td>喜欢观看各种类型的电影，包括动作、科幻、喜剧等。</td>
+</tr>
+<tr>
+<td>音乐</td>
+<td>喜欢听各种类型的音乐，包括流行、民谣、古典等。</td>
+</tr>
+</table>
+<p>邮箱: <span class="email-link" onclick="copyEmail()">yanfangwei467@gmail.com</span></p>
+<p>微信: <span class="wechat-link" onclick="copyWechat()">hbm090314</span></p>
 </section>
+</div>
+</main>
 <footer>
     <p>&copy; 2024 矿工Tob的个人简历</p>
 </footer>
